@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Abdullah</div>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button onclick="darkModeToggle()">Toggle Dark Mode</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hello! I am a Computer Science student at KFUPM.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a passionate programmer with a strong background in mathematics and computer science. I have participated in mathematics olympiads and mathematical competitions as well as multiple programming bootcamps and programs. I am interested in cybersecurity, cloud computing and LLM development.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Ghost Writer</h3>
+                    <p>A beautiful, local-first AI-powered text editor with Cursor-like features. Write in WYSIWYG, save as clean Markdown.</p>
+                    <img src="assets/images/ghostwriter.png" alt="Ghost Writer project">
+                </div>
+                <div class="project-card">
+                    <h3>Password Toolkit</h3>
+                    <p>A command line utility for various password related security tasks, including strength checking, secure storage, file encryption, and password cracking.</p>
+                    <img src="assets/images/passwordToolKit.png" alt="Password Toolkit project">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me by filling out the form below.</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Abdullah. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
