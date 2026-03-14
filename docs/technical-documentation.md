@@ -2,7 +2,7 @@
 
 ## 1. Overview
 
-This portfolio is a static, client-side website built with **HTML5**, **CSS3**, and **vanilla JavaScript**. No frameworks, build tools, or server-side logic are used. The site is responsive and includes a dark mode toggle.
+This portfolio is a static, client-side website built with **HTML5**, **CSS3**, and **vanilla JavaScript**. No frameworks, build tools, or server-side logic are used. The site is responsive and includes a dark mode toggle, smooth scrolling navigation, interactive form behavior, and basic animations/transitions.
 
 | Layer    | Technology        |
 |----------|-------------------|
@@ -21,7 +21,7 @@ assignment-1/
 ├── css/
 │   └── styles.css      # All styles (reset, layout, dark mode)
 ├── js/
-│   └── script.js       # Dark mode toggle
+│   └── script.js       # Dark mode toggle, smooth scroll, interactivity
 ├── assets/
 │   └── images/         # Project screenshots (e.g. ghostwriter.png, passwordToolKit.png)
 └── docs/
