@@ -46,6 +46,17 @@ nav {
     background-color: #f4f4f4;
 }
 
+nav a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    color: #0077cc;
+    transform: translateY(-1px);
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -89,6 +100,12 @@ nav ul {
     /* Optional: Flexbox inside the card to push buttons to the bottom */
     display: flex;
     flex-direction: column; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 /* 5. Contact Form (Basic styling) */
@@ -111,4 +128,44 @@ input, textarea, button {
     padding: 0.8rem;
     border: 1px solid #ccc;
     border-radius: 4px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+button {
+    cursor: pointer;
+    background-color: #0077cc;
+    color: #fff;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #005fa3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#form-feedback {
+    margin-top: 1rem;
+}
+
+.feedback-success {
+    color: #1a7f37;
+}
+
+.feedback-error {
+    color: #b3261e;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.25s ease-out;
 }
