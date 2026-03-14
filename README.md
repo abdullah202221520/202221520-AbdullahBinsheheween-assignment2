@@ -1,4 +1,4 @@
-# Portfolio Website: SWE363 Assignment 1
+# Portfolio Website: SWE363 Assignment 2
 
 ## Project Description
 
